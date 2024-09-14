@@ -1,0 +1,282 @@
+/* Basic styling for the body element */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+/* Stylimg for pages */
+.index, .scp-002, .scp-003, .scp-004, .scp-005, .scp-006 {
+    width: 99%;
+    max-width: 1600px;
+    height: auto;
+}
+
+/* Styling for the header element */
+header {
+    position: relative;
+    width: 100%;
+}
+
+/* Navigation bar styling */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+button{
+    padding: 10px;
+    background-color: #ae0000;
+    color: white;
+    font-size: 1rem;
+    font-family: "Special Elite", system-ui;
+    border-radius: 5px;
+}
+
+/* Logo styling within the navigation bar */
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+/* Flexbox styling for the main content row */
+.flexrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+}
+
+/* Flexbox styling for title and image containers */
+.titlesubject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin: 10px;
+}
+
+img {
+    width: 70%;
+    height: auto;
+}
+
+/* Styling for images with class 'circle-image' */
+.circle-image {
+    width: 40vw;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Styling for navigation images */
+.nav-image {
+    border-radius: 10%;
+    max-width: 700px;
+}
+
+/* Hover effect for navigation images */
+.nav-image:hover {
+    filter: brightness(1.4);
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #fff;
+}
+
+/* Styling for anchor elements */
+a {
+    color: white;
+    font-size: 2rem;
+    font-family: "Special Elite", system-ui;
+    text-shadow: 5px 5px 10px #ae0000, 5px 5px 10px #0000a7;
+    text-decoration: solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+/* Hover effect for anchor elements */
+a:hover {
+    color: rgb(255, 174, 174);
+    text-shadow: 0px 0px 20px #ff0000, 0px 0px 20px #0000ff;
+}
+
+/* Styling for horizontal rule elements */
+hr {
+    border-color: #ffffff;
+    box-shadow: 2px 2px 5px #ff0000, 2px 2px 5px #0000ff;
+}
+
+/* Styling for heading elements */
+h1, h2, h3, h4 {
+    color: white;
+    text-shadow: 5px 5px 10px #ae0000, 5px 5px 10px #0000a7;
+    font-family: "Special Elite", system-ui;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+/* Styling for paragraph and ordered list elements */
+p, ol{
+    color: white;
+    text-shadow: 2px 2px 5px #ae0000, 2px 2px 5px #0000a7;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 1350px; /* Set maximum width */
+    margin: 10px auto; /* Center the paragraph within its container */
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center; /* Center the text within the paragraph */
+}
+
+/* Styling for code elements */
+code {
+    color: #03A062;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1rem;
+}
+
+/* Styling for footer elements */
+.footer {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 5px 5px 10px #ae0000, 5px 5px 10px #0000a7;
+}
+
+/* Media query for screens up to 1350px wide */
+@media (max-width: 1350px) {
+    .navbar {
+        height: 70px;
+    }
+    
+    .logo {
+        height: 50px;
+    }
+
+    a {
+        font-size: 1.2rem;
+        padding: 4px;
+    }
+
+    p, ol {
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+    }
+
+    .flexrow {
+        margin: 5px;
+    }
+
+    .titlesubject {
+        margin: 10px;
+    }
+
+    .circle-image {
+        border-radius: 10%;
+    }
+
+    .circle-image:hover {
+        filter: brightness(1.4);
+        cursor: pointer;
+        box-shadow: 0px 0px 15px #fff;
+    }
+}
+
+/* Media query for screens up to 740px wide */
+@media (max-width: 740px) {
+    .navbar {
+        height: 30px;
+    }
+    
+    .logo {
+        height: 25px;
+    }
+
+    a {
+        font-size: 0.6rem;
+        padding: 2px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 0.7rem;
+    }
+
+    h4, p, ol, code  {
+        font-size: 0.6rem;
+    }
+
+    .footer {
+        font-size: 0.4rem;
+    }
+
+    img {
+        width: 90%;
+        height: auto;
+    }
+
+    button{
+        padding: 5px;
+        font-size: 0.6rem;
+    }
+
+    .flexrow {
+        margin: 3px;
+    }
+
+    .titlesubject {
+        margin: 5px;
+    }
+
+    .circle-image {
+        border-radius: 10%;
+    }
+
+    .circle-image:hover {
+        filter: brightness(1.4);
+        cursor: pointer;
+        box-shadow: 0px 0px 15px #fff;
+    }
+}
